@@ -16,4 +16,7 @@ Please submit comments, bugs, etc. on the issues page https://github.com/mmnashr
 We will publish the paper describing PhyloGeoRec soon. Stay tune!
 
 # Credits
-Funding and/or Resources can from these sources:
+We acknowledge funding and/or resources from:
+  1. Ministry of Research, Technology, and Higher Education Republic of Indonesia BIDIKMISI Scholarship.
+  2. Brawijaya University Faculty of Mathematics and Natural Sciences DPP/SPP Research Grant FY 2014.
+  3. NSF & USAID Partnerships for Enhanced Engagement in Research (PEER)
