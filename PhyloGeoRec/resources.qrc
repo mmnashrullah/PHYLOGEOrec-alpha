@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/plugins/PhyloGeoRec">
+    <file>icons/icon_beta.png</file>
+    <file>icons/icon24x24.png</file>
+    <file>icons/icon150x150.png</file>
+    <file>icons/icon300x300.png</file>
+    <file>icons/icon-default.png</file>
+    <file>icons/settings.png</file>
+    <file>icon.png</file>
+  </qresource>
+</RCC>

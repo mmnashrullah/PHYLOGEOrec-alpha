@@ -1,0 +1,41 @@
+'''UNUSED, WKT AND CHARSET'''
+'''
+  def _onFileBrowserButton(self):
+    csvFilePath = QFileDialog.getOpenFileName(self.ui, QApplication.translate('GeoCsvNewController', 'Open GeoCSV File'), self._browseOpenPath, QApplication.translate('GeoCsvNewController', 'Files (*.csv *.tsv *.*)'))
+    if csvFilePath:
+        self._updateDefaultFileOpenDir(QFileInfo(csvFilePath).path())
+        self.ui.filePath.setText(csvFilePath)
+    self.ui.activateWindow()
+'''
+
+'''
+  def _onCharsetError(self):
+    self.ui.statusNotificationLabel.setText(QApplication.translate('GeoCsvNewController', 'not utf8 encoded'))
+    self.ui.charsetDropDown.addItems(CharsetList.charsetList)
+    self.ui.charsetDropDown.setCurrentIndex(CharsetList.charsetList.index("latin_1"))
+    self._showCharsetWidget()
+'''
+
+'''
+  def _onCharsetConvert(self):
+    csvFilePath = self.ui.filePath.text()
+    encoding = self.ui.charsetDropDown.currentText()
+    try:
+        GeoCsvDataSourceHandler.createBackupFile(csvFilePath)
+        NotificationHandler.pushInfo(QApplication.translate('GeoCsvNewController', 'backup created'), QApplication.translate('GeoCsvNewController', 'Created backup on "{}"').format(csvFilePath))
+        GeoCsvDataSourceHandler.convertFileToUTF8(csvFilePath, encoding)
+        NotificationHandler.pushSuccess(QApplication.translate('GeoCsvNewController', 'Converted'), QApplication.translate('GeoCsvNewController', 'Successfully converted to utf-8'))
+        self._analyseCsv()
+    except:
+        self.ui.statusNotificationLabel.setText(QApplication.translate('GeoCsvNewController', 'error in converting'))
+'''
+
+'''
+  def _hideCharsetWidget(self):
+    self.ui.charsetWidget.hide()
+'''
+
+'''
+  def _showCharsetWidget(self):
+    self.ui.charsetWidget.show()
+'''

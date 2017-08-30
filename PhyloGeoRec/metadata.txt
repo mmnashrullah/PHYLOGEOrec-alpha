@@ -1,0 +1,53 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=PhyloGeoRec
+qgisMinimumVersion=2.8
+description=Phylogeography Reconstruction Tool for QGIS.
+version=1.00.b7.5
+author=Maulana Malik Nashrullah/NK Research Lab
+email=mmnashrullah@gmail.com
+
+about=PhyloGeoRec is a tool that very useful to visualizing geophylogenies (phylogeography reconstruction) in QGIS. 
+	This plugin is a fork of Qgis2threejs plugin (Version 1.4) which specially designed for making and visualizing geophylogenies, 
+	and by utilising Qgis2threejs engine abilities, this plugin able to export terrain data, map canvas image and vector data to your web browser and combined it with your geophylogenies. 
+	So, you can visualized interactive geophylogenies and view exported 3D objects on web browser which supports WebGL. 
+	
+	This plugin uses three.js library and Bio.Phylo library from Biopython Package.
+	
+	If you like this plugin and use this in your work, please cite: 
+	Nashrulloh, M.M., N. Kurniawan. 2016. PhyloGeoRec 1.0: QGIS Plugin for Phylogeography Reconstruction. Department of Biology. Faculty of Mathematics and Natural Sciences. Brawijaya University. Malang.
+
+tracker=https://github.com/mmnashrullah/PHYLOGEOrec-alpha
+repository=https://github.com/mmnashrullah/PHYLOGEOrec-alpha/issues
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+changelog=
+	Version 1.00.b7.5 (Build 12)
+	- First release of PhyloGeoRec.
+    - Included with Qgis2threejs engine version 1.4. 
+	- Enable geophylogeny creation based from Newick format-based files (Currently support Newick Files (*.nwk) and GenGIS 2 (Parks et al., 2013 ) GTM Model (*.gtm)).
+	- Enable geophylogeny creation in KML Format (Currently).
+	- Currently not support ESRI shapefile creation for geophylogeny creation, but support reading geophylogeny (in ESRI Shapefile format) created by Geophylobuilder (Kidd & Liu, 2008).
+
+# Tags are comma separated with spaces allowed
+tags=biogeography, phylogenetics, geophylogenies, phylogeography reconstruction
+
+homepage=http://nkresearch.ub.ac.id
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
