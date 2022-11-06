@@ -13,7 +13,7 @@ TBA
 Please submit comments, bugs, etc. on the issues page https://github.com/mmnashrullah/PHYLOGEO-rec-alpha/issues
 
 # Citation
-We will publish the paper describing PhyloGeoRec soon. Stay tune!
+Nashrulloh, M M., Kurniawan, N., Rahardi, B. 2017. PHYLOGEOrec: A QGIS plugin for spatial phylogeographic reconstruction from phylogenetic tree and geographical information data. AIP Conference Proceedings. 1908: 050004. https://dx.doi.org/10.1063/1.5012728.
 
 # Credits
 We acknowledge funding and/or resources from:
